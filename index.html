@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Survey </title>
+  <style>
+
+body {
+
+  background-color: black;
+  background-image: url(https://preview.redd.it/al0schdiybk51.jpg?width=1920&format=pjpg&auto=webp&s=593106abe87ade6faafaa7c68953981d929cad26);
+
+}
+
+    .form {
+      background-color: black;
+      color: black;
+      margin-left: auto;
+      margin-right: auto;
+      width: 65%;
+
+
+    }
+
+  .intro {
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    background-color: black;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: -100px;
+
+  }
+
+  #survey-form {
+    text-align: center;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+
+  }
+
+  .text-input {
+    width: 50%;
+    display:block;
+  }
+
+
+  .text-label {
+    margin: auto;
+    text-align: left;
+    display: block;
+  }
+
+
+.expertise-label,.expertise,.interest {
+  text-align: left;
+  display: block;
+  padding: .5%
+
+}
+
+#submit {
+  justify-content: center;
+  width: 80%;
+  background: #B3FF00;
+}
+
+#comments {
+  width: 80%;
+
+}
+
+  </style>
+
+
+</head>
+
+<body>
+
+<!--   Heading -->
+<div>
+  <h1 id="title" class="intro"> Codecamp Survey Practice </h1>
+  <p id="description" class="intro"> This is a test input form </p>
+</div>
+
+
+<!--  Input -->
+<div>
+  <form class="form" id="survey-form" action="action_page">
+
+    <label class="text-label" id="name-label" for="name">Name:</label></br>
+    <input class="text-input" type="text" id="name" name="name" placeholder="Enter Name" required> </br>
+
+    <label class="text-label" id="email-label" for="email">Email:</label></br>
+    <input class="text-input" type="email" id="email" name="email" placeholder="Enter email" required> </br>
+
+    <label class="text-label" id="number-label" for="number">Age:</label></br>
+    <input class="text-input" type="number" id ="number" name="number" placeholder= "Enter age" min ="0" max="100"></br>
+
+    <label class= "text-label" for="language"> Choose a language: </label></br>
+    <select class="text-input" name="dropdown" id="dropdown" placeholder="Select a language">
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+      <option value="C++">C++</option>
+      <option value="Javascript">Javascript</option>
+    </select></br>
+
+    <p class="expertise-label"> Select your level of expertise: <p>
+    <label class="expertise-label" for="Beginner">Beginner</label>
+    <input class="expertise" type="radio" name="expertise" id="Beginner" value="Beginner"></br>
+
+    <label class="expertise-label for="Intermediate">Intermediate</label>
+    <input class="expertise" type="radio" name="expertise" id="Intermediate" value="Intermediate"></br>
+
+    <label class="expertise-label for="Expert">Expert</label>
+    <input class="expertise" type="radio" name="expertise" id="Expert" value="Expert"></br>
+
+    <p class="interest"> Select your programming interest:</p>
+    <label class="interest" for="Front-end">Front-end</label>
+    <input class="interest" type="checkbox" name="interest" id="Front-end" value="Front-end"></br>
+
+    <label class="interest" for="Back-end">Back-end</label>
+    <input class="interest" type="checkbox" name="interest" id="Back-end" value="Back-End"></br>
+
+    <label class="interest" for="Machine-Learning">Machine Learning</label>
+    <input class="interest" type="checkbox" name="interest" id="Machine-Learning" value="Machine-Learning"></br></br>
+
+
+
+
+    <label for="comments">Any additonal comments? </label></br>
+    <textarea id="comments" name="comments" rows="5">Enter comment here...</textarea></br>
+
+    <input type="Submit" value="Submit" id="submit">
+  </form>
+  </div>
+
+
+
+</body>
+</html>
